@@ -24,7 +24,7 @@
     "bootstrap": "^5.3.3",
     "chart.js": "^4.4.8",
     "classnames": "^2.5.1",
-    "i18next": "^23.16.8",
+    "i18next": "^26.3.4",
     "js-cookie": "^3.0.5",
     "negotiator": "^0.6.4",
     "next": "^15.5.24",
