@@ -45,8 +45,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1
       i18next:
-        specifier: ^23.16.8
-        version: 23.16.8
+        specifier: ^26.3.4
+        version: 26.7.2(typescript@5.8.2)
       js-cookie:
         specifier: ^3.0.5
         version: 3.0.5
@@ -88,7 +88,7 @@ importers:
         version: 3.24.2
       zod-i18n-map:
         specifier: ^2.27.0
-        version: 2.27.0(i18next@23.16.8)(zod@3.24.2)
+        version: 2.27.0(i18next@26.7.2(typescript@5.8.2))(zod@3.24.2)
     devDependencies:
       '@types/js-cookie':
         specifier: ^3.0.6
@@ -1706,8 +1706,13 @@ packages:
   hyphenate-style-name@1.1.0:
     resolution: {integrity: sha512-WDC/ui2VVRrz3jOVi+XtjqkDjiVjTtFaAGiW37k6b+ohyQ5wYDOGkvCZa8+H0nx3gyvv0+BST9xuOgIyGQ00gw==}
 
-  i18next@23.16.8:
-    resolution: {integrity: sha512-06r/TitrM88Mg5FdUXAKL96dJMzgqLE5dv3ryBAra4KCwD9mJ4ndOTS95ZuymIGoE+2hzfdaMak2X11/es7ZWg==}
+  i18next@26.7.2:
+    resolution: {integrity: sha512-RsOY3BeaCDdkk52NeJSFAXELQ2rQXBO/tOub6L8ue2ICPfR/FRDWDOfEDg4xMPd1SqO5goVYQ6i72qWEUB/PPw==}
+    peerDependencies:
+      typescript: ^5 || ^6 || ^7
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   iconv-lite@0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
@@ -4738,9 +4743,9 @@ snapshots:
 
   hyphenate-style-name@1.1.0: {}
 
-  i18next@23.16.8:
-    dependencies:
-      '@babel/runtime': 7.26.9
+  i18next@26.7.2(typescript@5.8.2):
+    optionalDependencies:
+      typescript: 5.8.2
 
   iconv-lite@0.4.24:
     dependencies:
@@ -6152,9 +6157,9 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod-i18n-map@2.27.0(i18next@23.16.8)(zod@3.24.2):
+  zod-i18n-map@2.27.0(i18next@26.7.2(typescript@5.8.2))(zod@3.24.2):
     dependencies:
-      i18next: 23.16.8
+      i18next: 26.7.2(typescript@5.8.2)
       zod: 3.24.2
 
   zod@3.24.2: {}
